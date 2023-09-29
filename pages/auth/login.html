@@ -76,14 +76,14 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-md-start text-center py-6">
                         <h1 class="mb-4 fs-9 fw-bold">Log<span class="text-warning">in</span></h1>
-                        <div>
-                            <label for="user_type" class="text-warning me-3 fw-bolder">Login as</label>
-                            <select name="" id="user_type" class="form-control w-50 d-inline-block">
-                                <option value="user">Defualt user</option>
-                                <option value="designer">Designer</option>
-                            </select>
-                        </div>
-                        <form action="../user/index.html">
+                        <form id="login-form">
+                            <div>
+                                <label for="user_type" class="text-warning me-3 fw-bolder">Login as</label>
+                                <select name="user_type" id="user_type" class="form-control w-50 d-inline-block">
+                                    <option value="user">Defualt user</option>
+                                    <option value="designer">Designer</option>
+                                </select>
+                            </div>
                             <div>
                                 <label for="email">Email <span class="text-warning-darker">*</span></label>
                                 <input type="email" id="email" class="form-control border border-dark">

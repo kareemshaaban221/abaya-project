@@ -1,3 +1,22 @@
+function login(e) {
+    console.log('trest');
+    e.preventDefault();
+    const data = new FormData(e.target);
+    if (data.get('user_type') == 'user')
+        e.target.action = '../user/index.html';
+    else if (data.get('user_type') == 'designer')
+        e.target.action = '../designer/index.html';
+    else {
+        alert('هناك شئ خاطئ!');
+        return;
+    }
+    e.target.submit();
+}
+
+const loginForm = document.getElementById('login-form');
+if (loginForm)
+    loginForm.addEventListener('submit', login);
+
 function getSwiperInstance(swiper_selector) {
     return new Swiper(swiper_selector, {
         // Optional parameters
